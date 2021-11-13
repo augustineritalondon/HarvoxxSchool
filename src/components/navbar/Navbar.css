@@ -1,0 +1,133 @@
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hs-cont{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+.nav-sec{
+  width:33.3%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar {
+  font-size: 17px;
+  z-index: 999;
+}
+  
+.nav-links {
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.432);
+}
+  
+.nav-links:hover {
+    color: #FF3F34;
+    border-bottom: 3px solid #FF3F34;
+    transition: all 0.2s ease-out;
+}
+  
+.fa-bars {
+    color: #fff;
+    font-size: 25px;
+}
+
+.nav-btn{
+  background: #1E5BF9;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 0 30px;
+  margin: 0;
+}
+
+.span{
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.navbar-mobile{
+  display: none;
+}
+
+.active{
+  color: #FF3F34;
+  border-bottom: 3px solid #FF3F34;
+  text-shadow: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar{
+    display: none;
+  }
+  .navbar-mobile{
+    display: block;
+  }
+
+
+
+/* *********************************** */
+/* IF THIS DOESNT WORK, THEN I WILL BECOME A HOUSEWIFE */
+/* MOBILE VIEW NAVIGATION BAR */
+/* *********************************** */
+  .navbar-mobile{
+  }
+  .navbar-mobile .navbar-mobile-style{
+    background: #000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+  }
+  .navbar-mobile .navbar-mobile-style.slide{
+    transform: translateX(0);
+  }
+  .navbar-mobile .navbar-mobile-style ul{
+    padding: 0;
+    text-align: center;
+    align-self: center;
+  }
+  .navbar-mobile .navbar-mobile-style ul li{
+    list-style: none;
+    margin: 40px auto;
+  }
+  .navbar-mobile .navbar-mobile-style ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .menu-icon{
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 9;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.432);
+  }
+}

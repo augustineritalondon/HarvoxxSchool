@@ -1,0 +1,81 @@
+img{
+    width: 100%;
+}
+.hs-container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.testimonial{
+    margin-top: 30px;
+    background: #2f327d;
+    /* background: linear-gradient(90.14deg, #2f327d -1.05%, #dc9424 101.34%); */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.testimonial h1{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FAFAFA;
+}
+
+.testimonial img{
+    width: 97px;
+    height: 97px;
+    margin-top: 40px;
+}
+
+.testimonial h5{
+    font-family: 'Overlock', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.testimonial h6{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.testimonial p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FAFAFA;
+}
+
+.carousel-indicators{
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .testimonial{
+        padding: 100px 0;
+    }
+    .testimonial h1{
+        padding-bottom: 90px;
+    }
+    .testimonial img{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .testimonial{
+        padding: 100px 0;
+    }
+}

@@ -1,0 +1,48 @@
+.btn{
+    border-radius: 10px;
+    padding: 0 30px;
+    margin: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--blue{
+    background-color: #1E5BF9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn--red{
+    background: linear-gradient(90.08deg, #FF3F34 -8.44%, #FF6D34 111.83%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+/* 
+.btn--outline{
+    background: red;
+    border: 2px solid #1E5BF9;
+    color: red;
+    border: none;
+    border-radius: 10px;
+} */
+
+.btn--medium{
+    padding: 8px 30px;
+    font-size: 14px;
+}
+
+/* .btn--medium:hover{
+    background: #fff;
+    color: #1E5BF9;
+    transition: all 0.3s ease-out;
+} */
+
+.btn--red:hover{
+    background: #fff;
+    color: linear-gradient(90.08deg, #FF3F34 -8.44%, #FF6D34 111.83%);;
+    border: 2px solid linear-gradient(90.08deg, #FF3F34 -8.44%, #FF6D34 111.83%);;
+    border-radius: 10px;
+}

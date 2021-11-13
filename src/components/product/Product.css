@@ -1,0 +1,133 @@
+.product-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product{
+    padding-top: 60px;
+    text-align: center;
+}
+
+.product .product-design h1{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+}
+
+
+.product .product-design-card{
+    padding: 40px 0;
+}
+
+.product .product-design-card .card{
+    background: #FFFFFF;
+    box-shadow: 0px 7.79401px 19.485px rgba(0, 0, 51, 0.08);
+    border-radius: 11.682px;
+    width: 240px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.product .product-design-card .card h3{
+    color: #1E5BF9;
+    font-weight: 600;
+}
+
+.product .product-design-card .card h1{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37.5263px;
+    line-height: 71px;
+    letter-spacing: 0.58451px;
+    color: #000000;
+}
+
+.product .product-design-card button{
+    background: transparent;
+    border: 2px solid #1E5BF9!important;
+    color: #1E5BF9;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.product .product-design-card .times{
+    padding-top: 20px;
+}
+
+.product .product-design-card .times ul{
+    padding: 0;
+}
+
+.product .product-design-card .times ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+.product .product-design-card .times ul li i{
+    margin-right: 20px;
+    color: #1E5BF9;
+}
+
+.product .product-offer{
+    padding-bottom: 30px;
+}
+
+.product .product-offer h1{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.product .product-offer ul{
+    padding: 0;
+}
+
+.product .product-offer ul li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.product .product-offer ul li i{
+    margin-right: 10px;
+    color: #1E5BF9;
+}
+
+@media only screen and (min-width: 768px) {
+    .product-container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .product{
+        padding-top: 70px;
+    }
+    .product .product-design-card{
+        padding: 70px 0;
+    }
+    .product .product-offer{
+        padding-bottom: 60px;
+    }
+    .product .product-design-card .times{
+        padding-top: 40px;
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .product .product-design-card .times{
+        padding-top: 60px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .product-container{
+        width: 50%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,70 @@
+img{
+    width: 100%;
+}
+
+.payment{
+    padding: 70px 0;
+}
+
+.payment .form-container .image img{
+    display: none;
+    object-fit: cover;
+}
+
+.payment .form-container{
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    position: relative;
+    height: fit-content;
+}
+
+.nextButton{
+    background: #1E5BF9;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 30px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.nextButton::placeholder{
+    color: #fff;
+}
+
+.payment .image{
+    padding: 0;
+}
+
+.payment .content{
+    padding: 30px;
+    padding-top: 30px;
+    box-shadow: 0px 7.79401px 19.485px rgba(0, 0, 51, 0.08);
+}
+
+.payment .content p{
+    color: red;
+    margin-top: -13px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+    .payment .form-container{
+        width: 65%;
+    }
+    .payment .form-container .image img{
+        display: block;
+        height: 500px;
+    }
+    .payment .form-container .content form{
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .payment .form-container{
+        width: 55%;
+    }
+}

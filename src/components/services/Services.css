@@ -1,0 +1,196 @@
+img{
+    width: 100%;
+}
+.hs-container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.services{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services-text{
+    padding-bottom: 40px;
+}
+
+.services-text h1{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.services-text p{
+    text-align: justify;
+}
+
+.services-2{
+    padding-bottom: 50px;
+}
+
+.services-2 .row{
+    flex-direction: column-reverse;
+}
+
+.services-2-text{
+    padding-bottom: 30px;
+}
+
+.services-2-text h1{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.services-2-text p{
+    text-align: justify;
+}
+
+.services-3{
+    padding-bottom: 50px;
+}
+
+.services-3-text{
+    padding-bottom: 30px;
+}
+
+.services-3-text h1{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.services-3-text p{
+    text-align: justify;
+}
+
+.why-people{
+    padding-bottom: 20px;
+}
+
+.why-people h1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.why-people p{
+    text-align: justify;
+}
+
+.why-people ul{
+    padding: 0;
+}
+
+.why-people ul li{
+    list-style: none;
+}
+.why-people ul li i{
+    margin-right: 8px;
+    color: #1E5BF9;
+}
+
+@media only screen and (min-width: 768px) {
+    .services{
+        padding-top: 80px;
+    }
+    .services-2 .row{
+        flex-direction: row;
+    }
+    .services-2{
+        padding-bottom: 80px;
+    }
+    .services-3{
+        padding: 80px 0;
+    }
+    .why-people h1{
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .services-text{
+        padding-top: 60px;
+    }
+    .services h1{
+        font-size: 40px;
+        line-height: 62px;
+    }
+    .services-2-text{
+        padding-top: 75px;
+    }
+    .services-2 h1{
+        font-size: 40px;
+        line-height: 62px;
+    }
+    .services-3-text{
+        padding-top: 75px;
+    }
+    .services-3 h1{
+        font-size: 40px;
+        line-height: 62px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    .services .services-img img{
+        height: 500px;
+    }
+    .services-2 .services-2-img img{
+        height: 500px;
+    }
+    .services-3 .services-3-img img{
+        height: 500px;
+    }
+    .services-text{
+        padding-top: 130px;
+    }
+    .services-text h1{
+        font-size: 48px;
+        line-height: 62px;
+    }
+    .services-2{
+        padding-top: 50px;
+    }
+    .services-2-text{
+        padding-top: 130px;
+    }
+    .services-2-text h1{
+        font-size: 48px;
+        line-height: 62px;
+    }
+    .services-3{
+        padding-top: 20px;
+    }
+    .services-3-text{
+        padding-top: 130px;
+    }
+    .services-3-text h1{
+        font-size: 48px;
+        line-height: 62px;
+    }
+    .why-people{
+        padding: 70px 0;
+    }
+    .why-people h1{
+        font-size: 40px;
+        line-height: 52px;
+    }
+    .why-people .train{
+        float: center;
+    }
+}
