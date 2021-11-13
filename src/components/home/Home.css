@@ -69,6 +69,11 @@ img{
     padding:0 10px;
 }
 
+.caption-div button a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .section{
     padding: 50px 0;
     position: relative;
@@ -149,6 +154,11 @@ img{
 .section1 ul li i{
     margin-right: 10px;
     color: #1E5BF9;
+}
+
+.section1 .text-content button a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .section1 .section1-image{
@@ -289,25 +299,6 @@ img{
     }
     .section1{
         padding-top: 80px;
-    }
-    .hero .carousel-caption {
-        position: absolute;
-        right: 15%;
-        top: 35%!important;
-        left: 15%;
-    }
-    
-    .hero .carousel-caption h1{
-        font-family: 'Ubuntu', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-        line-height: 60px;
-        color: #FFFFFF;
-    }
-    
-    .hero .carousel-caption p{
-        padding: 15px 0;
     }
     .hsc-container{
         width: 85%;

@@ -18,6 +18,7 @@ const images = {
     group2: require("./Group2.png").default,
     group3: require("./Group3.png").default,
     regImage: require("./regImage.png").default,
+    success: require("./checked.png").default,
 }
 
 

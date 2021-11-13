@@ -50,6 +50,26 @@ img{
     font-size: 14px;
 }
 
+.success{
+    text-align: center;
+}
+
+.success button{
+    background: #5AE9BA;
+    border: 1px solid #34E2A9;
+    box-shadow: 0 3px 10px 0 rgba(90,233,186,0.60);
+    border-radius: 100px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    /*
+
+
+    opacity: 0;
+    font-size: 13px;
+    cursor: pointer; */
+}
+
 @media only screen and (min-width: 768px) {
     .payment .form-container{
         width: 65%;

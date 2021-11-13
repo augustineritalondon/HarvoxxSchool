@@ -5,6 +5,11 @@ import 'aos/dist/aos.css';
 import { Button } from '../button/Button';
 import { useForm } from 'react-hook-form';
 import './Style.css'
+import axios from 'axios';
+import qs from 'qs';
+import Swal from 'sweetalert2';
+import { Link, useHistory } from 'react-router-dom';
+
 
 function Payment() {
     const [formStep, setFormStep] = useState(0)
@@ -21,7 +26,7 @@ function Payment() {
         } else if (formStep === 1) {
             return (
                 <>
-                    <input  className="nextButton" buttonStyle='btn--red' type="button" value="Prev" onClick={prevStep} />
+                    <input className="nextButton" buttonStyle='btn--red' type="button" value="Prev" onClick={prevStep} />
                     <input disabled={!isValid} className="nextButton" buttonStyle='btn--red' type="submit" value="Submit" />
                 </>
             )
@@ -31,9 +36,48 @@ function Payment() {
         }
     }
 
+    const history = useHistory();
+
     const submitForm = (data) => {
-        window.alert(JSON.stringify(data))
-        nextStep()
+
+        var config = {
+            method: 'post',
+            url: 'https://harvoxxtest.com.ng/harvoxx-school/registration.php',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            data: qs.stringify(data)
+        };
+
+        axios(config).then((response) => {
+            console.log(response.data)
+            if (response.data.res === "success") {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Your registrations was successful',
+                    icon: 'success',
+                    confirmButtonText: 'Continue'
+                }).then((result) => {
+                    if (result.value) {
+                        history.push('/')
+                    }
+                });
+            } else {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Please check your network connection',
+                    icon: 'error',
+                    confirmButtonText: 'Try again'
+                })
+            }
+        }).catch(error => {
+            Swal.fire({
+                title: 'Error!',
+                text: 'Please check your network connection',
+                icon: 'error',
+                confirmButtonText: 'Try again'
+            })
+        })
+
+        // nextStep()
     }
 
     return (
@@ -49,17 +93,17 @@ function Payment() {
                                 <Form.Group className="mb-3" >
                                     <Form.Label>Full Name</Form.Label>
                                     <Form.Control type="text" placeholder="Enter Your Name Here"
-                                        {...register('fullName', {
+                                        {...register('name', {
                                             required: {
                                                 value: true,
                                                 message: "*** Enter your full name"
                                             }, minLength: {
                                                 value: 5,
-                                                message: "*** Don't be stupid"
+                                                message: "*** Don't be stupid, please enter your fullname"
                                             }
                                         })} />
                                 </Form.Group>
-                                {errors.fullName && <p>{errors.fullName.message}</p>}
+                                {errors.name && <p>{errors.name.message}</p>}
                                 <Form.Group className="mb-3">
                                     <Form.Label>Email</Form.Label>
                                     <Form.Control type="email" placeholder="info@gmail.com" {...register('email', {
@@ -111,18 +155,18 @@ function Payment() {
                             {formStep === 1 && (<section>
                                 <Form.Group className="mb-3" controlId="formBasicName">
                                     <Form.Label>Residential</Form.Label>
-                                    <Form.Control type="text" placeholder="woji port harcourt" {...register('residential',{
+                                    <Form.Control type="text" placeholder="woji port harcourt" {...register('location', {
                                         required: {
                                             value: true,
                                             message: "*** Enter you Residential Address"
-                                        }, 
+                                        },
                                         minLength: {
                                             value: 5,
-                                            message: "*** Don't be stupid"
+                                            message: "*** Don't be stupid, please enter a valid address"
                                         }
                                     })} />
                                 </Form.Group>
-                                {errors.residential && <p>{errors.residential.message}</p>}
+                                {errors.location && <p>{errors.location.message}</p>}
                                 <Form.Group className="mb-3" controlId="formBasicName">
                                     <Form.Label>Age Group</Form.Label>
                                     <Form.Select aria-label="Default select example" {...register('age', {
@@ -162,13 +206,19 @@ function Payment() {
                                         <option disabled></option>
                                         <option value="FrontEnd">Frontend Developer</option>
                                         <option value="Backend">Backend Developer</option>
+                                        <option value="productdesign">Product Designer</option>
                                     </Form.Select>
                                 </Form.Group>
                                 {errors.package && <p>{errors.package.message}</p>}
                             </section>)}
 
                             {formStep === 2 && (<section>
-                                <h1>Congrats</h1>
+                                {/* <div className="success">
+                                    <img src={images.success} />
+                                    <h1>Success!</h1>
+                                    <p>You have sucessfully sent your application.</p>
+                                    <button><Link to="/payment"> Continue </Link></button>
+                                </div> */}
                             </section>)}
 
                             {renderButton()}

@@ -125,7 +125,7 @@ const home = () => {
               <li><i class="fas fa-check-circle"></i>Website Development (Frontend)</li>
               <li><i class="fas fa-check-circle"></i>Website Development (Backend)</li>
             </ul>
-            <Button buttonStyle='btn--blue' buttonSize='btn--medium'>Apply Now</Button>
+            <Button buttonStyle='btn--blue' buttonSize='btn--medium'><Link to="/payment"> Apply Now </Link></Button>
           </div>
           <div className="col-lg-6 col-md-6 col-12 section1-image" data-aos="fade-left"
             data-aos-easing="linear"
