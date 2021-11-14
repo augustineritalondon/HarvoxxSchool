@@ -204,9 +204,12 @@ function Payment() {
                                         }
                                     })}>
                                         <option disabled></option>
-                                        <option value="FrontEnd">Frontend Developer</option>
-                                        <option value="Backend">Backend Developer</option>
-                                        <option value="productdesign">Product Designer</option>
+                                        <option value="FrontEnd">Website Development (Frontend)</option>
+                                        <option value="Backend">Website Development (Backend)</option>
+                                        <option value="sybersecurity">Cyber Security (Powered by hackify.io)</option>
+                                        <option value="productdesign">Product Design</option>
+                                        <option value="digitalmarketing">Digital Marketing</option>
+                                        <option value="graphicsdesign">Graphics Design/Product Branding</option>
                                     </Form.Select>
                                 </Form.Group>
                                 {errors.package && <p>{errors.package.message}</p>}

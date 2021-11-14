@@ -19,9 +19,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link to="/" className="nav-links"> Home</Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link to="/" className="nav-links">About</Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link to="/" className="nav-links">Courses</Link>
             </li>
@@ -31,7 +31,7 @@ const Navbar = () => {
               <span className="nav-item">
                 <Link to="/payment" className="nav-links">Register</Link>
               </span>
-              <Button buttonStyle='btn--red'>Sponsor</Button>
+              {/* <Button buttonStyle='btn--red'>Sponsor</Button> */}
             </div>
           </div>
         </div>
@@ -43,10 +43,10 @@ const Navbar = () => {
           <span className="menu-icon" onClick={handleClick}><i class="fas fa-times"></i></span>
           <ul>
             <li onClick={handleClick}><Link to="/"> Home</Link></li>
-            <li onClick={handleClick}><Link to="/"> About</Link></li>
+            {/* <li onClick={handleClick}><Link to="/"> About</Link></li> */}
             <li onClick={handleClick}><Link to="/"> Courses</Link></li>
             <li onClick={handleClick}><Link to="/payment"> Register</Link></li>
-            <li onClick={handleClick}><Button buttonStyle='btn--red'>Sponsor</Button></li>
+            {/* <li onClick={handleClick}><Button buttonStyle='btn--red'>Sponsor</Button></li> */}
           </ul>
         </div>
       </nav>

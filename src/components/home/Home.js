@@ -121,9 +121,12 @@ const home = () => {
             <h1>Learn a Tech Skill and be financially free</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam augue id magna finibus, a maximus </p>
             <ul>
-              <li><i class="fas fa-check-circle"></i>Product Design</li>
+              <li><i class="fas fa-check-circle"></i>Product Design(Ui/Ux)</li>
               <li><i class="fas fa-check-circle"></i>Website Development (Frontend)</li>
               <li><i class="fas fa-check-circle"></i>Website Development (Backend)</li>
+              <li><i class="fas fa-check-circle"></i>Cyber Security (Powered by hackify.io)</li>
+              <li><i class="fas fa-check-circle"></i>Digital Marketing</li>
+              <li><i class="fas fa-check-circle"></i>Graphics Design and Product Branding</li>
             </ul>
             <Button buttonStyle='btn--blue' buttonSize='btn--medium'><Link to="/payment"> Apply Now </Link></Button>
           </div>
@@ -148,24 +151,67 @@ const home = () => {
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
             <img src={images.shopping} />
-            <h3>UiUx Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam </p>
-            <a href="">Learn More</a>
+            <h3>Product(UI/UX) Design</h3>
+            <p>
+              Product designers are able to design, prototype, test, and improve products. 
+              They work to optimize the user experience in the solutions they make for their users.
+            </p>
+            <a href="/payment">Apply Now</a>
           </div>
           <div className="col-lg-4 col-md-4 col-12 card-hover" data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="1500">
             <img src={images.shopping} />
-            <h3>UiUx Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam </p>
-            <a href="">Learn More</a>
+            <h3>Website Development (Frontend)</h3>
+            <p>
+            Frontend of the website that the user interacts with directly. It is also known as the ‘Christ Side’ 
+            of the platform. It includes everything that users experience directly on the website. 
+            Text colors &amp; styles, images, graphs &amp; tables, buttons, colors &amp; navigation menu.
+            </p>
+            <a href="/payment">Apply Now</a>
           </div>
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
             <img src={images.shopping} />
-            <h3>UiUx Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam </p>
-            <a href="">Learn More</a>
+            <h3>Website Development (Backend)</h3>
+            <p>This is the server-side of the website. It shows and arranges data. It also makes sure everything 
+              on the client-side of the website works fine. This is actually the part of the website that you 
+              can't see or interact with. Building APIs, creating libraries, etc. are all included in the backend 
+              development.
+            </p>
+            <a href="/payment">Apply Now</a>
+          </div>
+          <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
+            data-aos-duration="3000">
+            <img src={images.shopping} />
+            <h3>CyberSecurity (Powered by hackify.io)</h3>
+            <p>
+              Cybersecurity deals with the protection of internet-connected systems (hardware, software, data, 
+              etc) from cyber attacks. CyberSecurity experts defends computers, servers, mobile devices, 
+              electronic systems, networks and data from malicious attacks.
+            </p>
+            <a href="/payment">Apply Now</a>
+          </div>
+          <div className="col-lg-4 col-md-4 col-12 card-hover" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+            <img src={images.shopping} />
+            <h3>Digital Marketing</h3>
+            <p>
+              This is simply advertising made through digital channels such as search engines, 
+              social media, email, mobile apps. It involves the use of the internet to reach consumers.
+            </p>
+            <a href="/payment">Apply Now</a>
+          </div>
+          <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
+            data-aos-duration="3000">
+            <img src={images.shopping} />
+            <h3>Graphics Design/Product Branding</h3>
+            <p>
+              Graphic design is a craft where you create visual content to communicate messages. 
+              Graphic designers use typography, ideas and pictures to meet users' specific needs.
+            </p>
+            <a href="/payment">Apply Now</a>
           </div>
         </div>
       </section>
