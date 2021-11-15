@@ -22,7 +22,7 @@
 
 .navbar {
   font-size: 17px;
-  z-index: 999;
+  z-index: 2000;
 }
   
 .nav-links {
@@ -97,7 +97,7 @@
     display: grid;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 2000;
     transform: translateX(-100%);
     transition: all .5s ease-in-out;
   }
@@ -127,7 +127,7 @@
     position: absolute;
     top: 10px;
     right: 20px;
-    z-index: 9;
+    z-index: 2000;
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.432);
   }
 }

@@ -38,18 +38,6 @@ const Navbar = () => {
               </HashLink>
               {/* <Link to="/" className="nav-links">Courses</Link> */}
             </li>
-            <li>
-              <HashLink
-                activeClass="active"
-                to="courses"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                Test 1
-              </HashLink>
-            </li>
           </ul>
           <div className="span nav-sec">
             <div style={{ display: "flex", justifyContent: "flex-end" }}>

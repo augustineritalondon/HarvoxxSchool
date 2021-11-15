@@ -24,6 +24,7 @@ img{
 .hero .carousel{
     min-height: 50vh;
     height: auto;
+    z-index: 1000;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
@@ -69,6 +70,11 @@ img{
     padding:0 10px;
 }
 
+.caption-div button{
+    position: absolute;
+    z-index: 2000;
+}
+
 .caption-div button a{
     color: #fff;
     text-decoration: none;
@@ -77,6 +83,7 @@ img{
 .section{
     padding: 50px 0;
     position: relative;
+    z-index: 2000;
 }
 
 .section .hcard{

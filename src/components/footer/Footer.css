@@ -27,7 +27,7 @@
 
 .footer ul li{
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .footer i{
@@ -59,11 +59,10 @@
 }
 @media only screen and (min-width: 1024px) {
     .footer{
-        padding-left: 0;
+        padding-left: 15px;
     }  
     .footer ul{
         padding: 0;
-        text-align: right;
     }
     .text-end{
         text-align: right!important;

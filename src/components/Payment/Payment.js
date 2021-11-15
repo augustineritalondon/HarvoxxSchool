@@ -276,6 +276,9 @@ function Payment() {
                       <option value="graphicsdesign">
                         Graphics Design/Product Branding
                       </option>
+                      <option value="graphicsdesign">
+                        Mobile App Development (Flutter)
+                      </option>
                     </Form.Select>
                   </Form.Group>
                   {errors.package && <p>{errors.package.message}</p>}

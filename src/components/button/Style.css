@@ -40,9 +40,9 @@
     transition: all 0.3s ease-out;
 } */
 
-.btn--red:hover{
+/* .btn--red:hover{
     background: #fff;
-    color: linear-gradient(90.08deg, #FF3F34 -8.44%, #FF6D34 111.83%);;
-    border: 2px solid linear-gradient(90.08deg, #FF3F34 -8.44%, #FF6D34 111.83%);;
+    color: #000;
+    border: 2px solid #FF3F34;
     border-radius: 10px;
-}
+} */

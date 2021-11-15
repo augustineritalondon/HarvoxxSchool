@@ -10,8 +10,6 @@ import { Link } from "react-router-dom";
 
 const home = () => {
 
-  const ola = () => alert('ola');
-
   return (
     <>
       <section className="hero">
@@ -30,7 +28,7 @@ const home = () => {
                   data-aos-easing="linear"
                   data-aos-duration="1500"> Register to acquire in-demand tech skills for FREE</p>
                 <div>
-                  <Button buttonStyle='btn--red' onClick={ola}> <Link to="/payment"> Apply Now </Link></Button>
+                  <Button buttonStyle='btn--red' className="herobutton"> <Link to="/payment"> Apply Now </Link></Button>
                 </div>
               </div>
             </div>
@@ -119,7 +117,7 @@ const home = () => {
           <div className="col-lg-6 col-md-6 col-12 text-content" data-aos="fade-right"
             data-aos-easing="linear"
             data-aos-duration="1500">
-            <h1>Learn Top Tech Skils for FREE.</h1>
+            <h1>Learn Top Tech Skills for FREE.</h1>
             <p>There is a surge in demand for individuals with these skills. Learn anyone for FREE NOW. </p>
             <ul>
               <li><i class="fas fa-check-circle"></i>Product Design(Ui/Ux)</li>
@@ -128,6 +126,7 @@ const home = () => {
               <li><i class="fas fa-check-circle"></i>Cyber Security (Powered by hackify.io)</li>
               <li><i class="fas fa-check-circle"></i>Digital Marketing</li>
               <li><i class="fas fa-check-circle"></i>Graphics Design and Product Branding</li>
+              <li><i class="fas fa-check-circle"></i>Mobile App Development (Flutter)</li>
             </ul>
             <Button buttonStyle='btn--blue' buttonSize='btn--medium'><Link to="/payment"> Apply Now </Link></Button>
           </div>
@@ -157,7 +156,7 @@ const home = () => {
               Product designers are able to design, prototype, test, and improve products. 
               They work to optimize the user experience in the solutions they make for their users.
             </p>
-            <a href="/payment">Apply Now</a>
+            <Link to="/payment"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12 card-hover" data-aos="fade-down"
             data-aos-easing="linear"
@@ -165,11 +164,11 @@ const home = () => {
             <img src={images.shopping} />
             <h3>Website Development (Frontend)</h3>
             <p>
-            Frontend of the website that the user interacts with directly. It is also known as the ‘Christ Side’ 
+            Frontend is the part of the website that the user interacts with directly. It is also known as the ‘Christ Side’ 
             of the platform. It includes everything that users experience directly on the website. 
             Text colors &amp; styles, images, graphs &amp; tables, buttons, colors &amp; navigation menu.
             </p>
-            <a href="/payment">Apply Now</a>
+            <Link to="/payment"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
@@ -180,7 +179,7 @@ const home = () => {
               can't see or interact with. Building APIs, creating libraries, etc. are all included in the backend 
               development.
             </p>
-            <a href="/payment">Apply Now</a>
+            <Link to="/payment"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
@@ -191,7 +190,7 @@ const home = () => {
               etc) from cyber attacks. CyberSecurity experts defends computers, servers, mobile devices, 
               electronic systems, networks and data from malicious attacks.
             </p>
-            <a href="/payment">Apply Now</a>
+            <Link to="/payment"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12 card-hover" data-aos="fade-down"
             data-aos-easing="linear"
@@ -202,7 +201,7 @@ const home = () => {
               This is simply advertising made through digital channels such as search engines, 
               social media, email, mobile apps. It involves the use of the internet to reach consumers.
             </p>
-            <a href="/payment">Apply Now</a>
+            <Link to="/payment"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
@@ -212,7 +211,7 @@ const home = () => {
               Graphic design is a craft where you create visual content to communicate messages. 
               Graphic designers use typography, ideas and pictures to meet users' specific needs.
             </p>
-            <a href="/payment">Apply Now</a>
+            <Link to="/payment"> Apply Now </Link>
           </div>
         </div>
       </section>

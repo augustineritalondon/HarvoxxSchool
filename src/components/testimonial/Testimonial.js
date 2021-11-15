@@ -7,24 +7,24 @@ const Testimonial = () => {
     const testimonial = [
         {
             image: "{images.testimonialImage}",
-            author: "Queen Heart",
-            school: "UST Student",
+            author: "Macsams Emmanuel Samuel",
+            school: "Web Developer, Port Harcourt",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel auctor nisi. Curabitur pellentesque a dolor in vulputate. Sed at viverra nisi. Suspendisse rutrum ipsum justo, et tempor purus tristique et. Vivamus sodales vel justo sit amet egestas. Vestibulum ante ipsum",
+                "I was at a point in Web development where I needed mentoring and coaching. I had bought a course online but couldn't understand the concept of web development fully, until I had an opportunity to be trained by the Harvoxx team. The free but intensify training started on the 9th of  September, 2021. So far, I've learnt how to make good tech researches and I've learnt a lot on web development, UI and UX principles.",
         },
         {
             image: "{images.testimonialImage}",
             author: "Helen Design Cook",
             school: "UST Student",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel auctor nisi. Curabitur pellentesque a dolor in vulputate. Sed at viverra nisi. Suspendisse rutrum ipsum justo, et tempor purus tristique et. Vivamus sodales vel justo sit amet egestas. Vestibulum ante ipsum",
+                "My journey into Tech has been a very interesting one all thanks to the team at Harvoxx Tech Hub. I started my frontend development training with lots of doubts but two weeks into my training at Harvoxx Tech Hub, I felt at peace with myself and fell in love with not just frontend development but the entire tech thing. They helped set me out properly on this part and I’m proud for the lady I’m becoming.",
         },
         {
             image: "{images.testimonialImage}",
             author: "Somebody Somewhere",
             school: "UST Student",
             content:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel auctor nisi. Curabitur pellentesque a dolor in vulputate. Sed at viverra nisi. Suspendisse rutrum ipsum justo, et tempor purus tristique et. Vivamus sodales vel justo sit amet egestas. Vestibulum ante ipsum",
+                "When I told my mum about my zeal to acquire a Tech skill at Harvoxx, she simply asked me: “How will you make money with that?”. I couldn’t answer that question boldly because it wasn’t so clear to how exactly I was going to start making money with my skill. Well, the Harvoxx team didn’t just train me, they showed me how to monetize my skills and that made all the difference for me. I love all of you guys at Harvoxx.",
         }
     ];
 
