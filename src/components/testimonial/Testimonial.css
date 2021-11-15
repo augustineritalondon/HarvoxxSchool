@@ -28,6 +28,7 @@ img{
     width: 97px;
     height: 97px;
     margin-top: 40px;
+    border-radius: 50%;
 }
 
 .testimonial h5{
@@ -67,7 +68,7 @@ img{
         padding: 100px 0;
     }
     .testimonial h1{
-        padding-bottom: 90px;
+        /* padding-bottom: 90px; */
     }
     .testimonial img{
         margin-bottom: 20px;

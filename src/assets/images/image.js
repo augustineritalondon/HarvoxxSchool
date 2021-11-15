@@ -7,7 +7,7 @@ const images = {
     productdesign: require("./Vector2.png").default,
     hand: require("./Vector3.png").default,
     unsplash1: require("./unsplash1.png").default,
-    testimonialImage: require("./testimonialImage.png").default,
+    // testimonialImage: require("./testimonialImage.png").default,
     unsplash2: require("./unsplash2.png").default,
     hero1: require("./hero1.png").default,
     hero2: require("./hero2.jpg").default,
@@ -19,6 +19,9 @@ const images = {
     group3: require("./Group3.png").default,
     regImage: require("./regImage.png").default,
     success: require("./checked.png").default,
+    mascam: require("./mascam.jpeg").default,
+    jecintah: require("./jecintah.jpeg").default,
+    emmanuel: require("./emmanuel.jpeg").default,
 }
 
 
