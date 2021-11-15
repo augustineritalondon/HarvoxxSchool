@@ -7,6 +7,7 @@ import { Navbar } from "../index";
 import './Home.css'
 import { Link } from "react-router-dom";
 
+
 const home = () => {
 
   const ola = () => alert('ola');
@@ -24,10 +25,10 @@ const home = () => {
             <div className="caption-div">
               <div className="text">
                 <h1 data-aos="fade-up"
-                  data-aos-duration="3000">Everything You Need for a Sucessful Tech Career</h1>
+                  data-aos-duration="3000">Be a part of the next TechForce.</h1>
                 <p data-aos="fade-down"
                   data-aos-easing="linear"
-                  data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies erat sapien</p>
+                  data-aos-duration="1500"> Register to acquire in-demand tech skills for FREE</p>
                 <div>
                   <Button buttonStyle='btn--red' onClick={ola}> <Link to="/payment"> Apply Now </Link></Button>
                 </div>
@@ -44,10 +45,10 @@ const home = () => {
             <div className="caption-div">
               <div className="text">
                 <h1 data-aos="fade-up"
-                  data-aos-duration="3000">Everything You Need for a Sucessful Tech Career</h1>
+                  data-aos-duration="3000">Digital Skillup Project for 300 Youths in Rivers State.</h1>
                 <p data-aos="fade-down"
                   data-aos-easing="linear"
-                  data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies erat sapien</p>
+                  data-aos-duration="1500">If you are willing, and can be dedicated, then you can learn a tech skill now.</p>
                 <div>
                   <Button buttonStyle='btn--red'> <Link to="/payment"> Apply Now </Link></Button>
                 </div>
@@ -64,10 +65,10 @@ const home = () => {
             <div className="caption-div">
               <div className="text">
                 <h1 data-aos="fade-up"
-                  data-aos-duration="3000">Everything You Need for a Sucessful Tech Career</h1>
+                  data-aos-duration="3000">Start Your Tech Career With DSP-300</h1>
                 <p data-aos="fade-down"
                   data-aos-easing="linear"
-                  data-aos-duration="1500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies erat sapien</p>
+                  data-aos-duration="1500">Join millions of other youths earning legitimately with their tech skills</p>
                 <div>
                   <Button buttonStyle='btn--red'> <Link to="/payment"> Apply Now </Link></Button>
                 </div>
@@ -85,7 +86,7 @@ const home = () => {
               <div className="col-10" data-aos="fade-up"
                 data-aos-duration="3000">
                 <h3>Get Trained &amp; Mentored</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo </p>
+                <p>You will get 3 months of intensive training and mentorship during you life project </p>
               </div>
             </div>
           </div>
@@ -96,7 +97,7 @@ const home = () => {
                 data-aos-easing="linear"
                 data-aos-duration="1500">
                 <h3>Get Visibilty</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo </p>
+                <p>You will be equipped and exposed to techniques to enhance your visibility to attract high-paying cilents. </p>
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@ const home = () => {
               <div className="col-10" data-aos="fade-up"
                 data-aos-duration="3000">
                 <h3>Start Earning</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo </p>
+                <p>Now you are all set. You can start earning and growing exponentially with your skills. </p>
               </div>
             </div>
           </div>
@@ -118,8 +119,8 @@ const home = () => {
           <div className="col-lg-6 col-md-6 col-12 text-content" data-aos="fade-right"
             data-aos-easing="linear"
             data-aos-duration="1500">
-            <h1>Learn a Tech Skill and be financially free</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquam augue id magna finibus, a maximus </p>
+            <h1>Learn Top Tech Skils for FREE.</h1>
+            <p>There is a surge in demand for individuals with these skills. Learn anyone for FREE NOW. </p>
             <ul>
               <li><i class="fas fa-check-circle"></i>Product Design(Ui/Ux)</li>
               <li><i class="fas fa-check-circle"></i>Website Development (Frontend)</li>
@@ -142,11 +143,11 @@ const home = () => {
         </div>
       </section>
 
-      <section className="hs-container section2">
+      <section className="hs-container section2" id="courses">
         <h1 data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1500">
-          Learn a Tech Skill and be financially free</h1>
+          Grab Any of these Tech-Skills</h1>
         <div className="row skillcard">
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
