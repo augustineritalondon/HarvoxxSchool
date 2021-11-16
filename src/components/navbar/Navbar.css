@@ -97,7 +97,7 @@
     display: grid;
     top: 0;
     left: 0;
-    z-index: 2000;
+    z-index: 3000;
     transform: translateX(-100%);
     transition: all .5s ease-in-out;
   }

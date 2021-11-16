@@ -33,7 +33,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
-              >
+              > 
                 Courses
               </HashLink>
               {/* <Link to="/" className="nav-links">Courses</Link> */}
