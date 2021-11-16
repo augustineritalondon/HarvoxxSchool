@@ -36,9 +36,9 @@ const Testimonial = () => {
                     <div>
                         <Carousel interval={2000}>
                             <Carousel.Item interval={5000}>
-                                <img src={images.emmanuel} alt="testimonial image" />
-                                <h5>Macsams Emmanuel Samuel</h5>
-                                <h6>Web Developer, Port Harcourt</h6>
+                                <img src={images.mascam} alt="testimonial image" />
+                                <h5>Macsams</h5>
+                                <h6>Product Designer / Web Developer, Port Harcourt</h6>
                                 <div>
                                     <p>I was at a point in Web development where I needed mentoring and coaching. I had bought a course online but couldn't understand the concept of web development fully, until I had an opportunity to be trained by the Harvoxx team. With the training I improved so much within a short time and got exposed to various techniques and tools. I currently do lots of freelance jobs for clients and get paid and I also conduct paid web design trainings for secondary school kids. My product design and web development skills are awesome now all thanks to the Harvoxx Team.</p>
                                 </div>
@@ -46,8 +46,8 @@ const Testimonial = () => {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item interval={5000}>
-                                <img src={images.mascam} alt="testimonial image" />
-                                <h5>Mascsams</h5>
+                                <img src={images.emmanuel} alt="testimonial image" />
+                                <h5>Emmanuel</h5>
                                 <h6>Web Developer, Port Harcourt</h6>
                                 <div>
                                     <p>My journey into Tech has been a very interesting one all thanks to the team at Harvoxx Tech Hub. I started my frontend development training with lots of doubts but two weeks into my training at Harvoxx Tech Hub, I felt at peace with myself and fell in love with not just frontend development but the entire tech thing. They helped set me out properly on this part and I’m proud for the lady I’m becoming.</p>

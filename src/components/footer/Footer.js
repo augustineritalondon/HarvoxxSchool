@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-4 col-md-6 col-12">
                             <h3>Harvoxx Tech Hub</h3>
-                            <p>The Digital SkillUp Project (DSP-300) is a FREE three months intensive trainings on digitals for 300 selected youths in Rivers State. The training is geared towards equipping youths in Rivers State with in-demand digital skills and mentoring them in building a successful Tech Career.</p>
+                            <p>The Digital SkillUp Project (DSP-300) is a FREE three months intensive trainings on digital skills for 300 selected youths in Rivers State. The training is geared towards equipping youths in Rivers State with in-demand digital skills and mentoring them in building a successful Tech Career.</p>
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-12 f">
@@ -37,9 +37,9 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-2 col-md-6 col-12">
                             <h3>Connect With Us</h3>
-                            <i class="fab fa-twitter"></i>
+                            <a href="https://twitter.com/HarvoxxH"><i class="fab fa-twitter"></i></a>
                             {/* <i class="fab fa-instagram"></i> */}
-                            <i class="fab fa-facebook-f"></i>
+                            <a href="https://web.facebook.com/HarvoxxOfficial"><i class="fab fa-facebook-f"></i></a>
                             {/* <i class="fab fa-linkedin"></i> */}
                         </div>
                     </div>
