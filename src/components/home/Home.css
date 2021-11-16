@@ -1,403 +1,403 @@
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
-.hs-container{
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.hero{
-    position: relative;
-    width:100%;
+.hs-container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.hero .carousel-inner{
-    z-index: -1;
+.hero {
+  position: relative;
+  width: 100%;
 }
 
-.hero .carousel-inner .carousel-item img{
-    object-fit: cover;
+.hero .carousel-inner {
+  z-index: -1;
+}
+
+.hero .carousel-inner .carousel-item img {
+  object-fit: cover;
+  height: 50vh;
+}
+
+.hero .carousel {
+  min-height: 50vh;
+  height: auto;
+  z-index: 1000;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none;
+}
+
+.caption-div {
+  background: rgba(23, 29, 36, 0.63);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption-div h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.caption-div p {
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.caption-div div div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 99;
+}
+
+.caption-div div {
+  padding: 0 10px;
+}
+
+.caption-div button {
+  position: absolute;
+  z-index: 2000;
+}
+
+.caption-div button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  padding: 50px 0;
+  position: relative;
+  z-index: 2000;
+}
+
+.section .hcard {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
+  border-radius: 17.6667px;
+  padding: 20px 5px;
+}
+
+.section .hcard img {
+  margin-top: 36px;
+  margin-left: 12px;
+}
+
+.section h3 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.section p {
+  font-size: 13.5319px;
+}
+
+.section1 {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.section1 .text-content {
+  padding-bottom: 30px;
+}
+
+.section1 h1 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.section1 p {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-align: justify;
+}
+
+.section1 ul {
+  padding: 0;
+}
+
+.section1 ul li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(4, 4, 4, 0.8);
+}
+
+.section1 ul li i {
+  margin-right: 10px;
+  color: #1e5bf9;
+}
+
+.section1 .text-content button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section1 .section1-image {
+  position: relative;
+}
+
+.section1 .curve-image {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.section1 .section1-image .img-image img {
+  position: absolute;
+  box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
+  border-radius: 17.6667px;
+  width: 120px;
+  height: 60px;
+  bottom: 30px;
+  z-index: 2;
+}
+
+.section2 {
+  padding-top: 30px;
+}
+
+.section2 h1 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  text-align: center;
+}
+
+.skillcard {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.skillcard .col-12 {
+  margin-bottom: 50px;
+  padding: 30px 10px;
+}
+
+.skillcard img {
+  width: 80px;
+  height: 67px;
+}
+
+.skillcard h3 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.skillcard .card-hover {
+  box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero .carousel {
+    margin-top: -100px;
+  }
+  .hero .carousel-inner .carousel-item img {
     height: 50vh;
-}
+  }
+  .section1 {
+    padding-top: 60px;
+  }
+  .caption-div .text {
+    padding-top: 110px;
+    width: 60%;
+    margin: 0 auto;
+  }
 
-.hero .carousel{
-    min-height: 50vh;
-    height: auto;
-    z-index: 1000;
-}
-
-.carousel-control-next-icon, .carousel-control-prev-icon{
-    display: none;
-}
-
-.caption-div{
-    background: rgba(23, 29, 36, 0.63);
-    width: 100%;
-    height: 100%;
-    position:absolute;
-    top:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caption-div h1{
-    font-family: 'Ubuntu', sans-serif;
+  .caption-div h1 {
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 22px;
-    line-height: 30px;
-    color: #FFFFFF;
+    font-size: 30px;
+    line-height: 40px;
+    color: #ffffff;
     text-align: center;
-}
+  }
 
-.caption-div p{
+  .caption-div p {
     padding: 10px 0;
-    color:#fff;
-    text-align: center;
-}
-
-.caption-div div div{
-    width:100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    z-index: 99;
-}
-
-.caption-div div{
-    padding:0 10px;
-}
-
-.caption-div button{
-    position: absolute;
-    z-index: 2000;
-}
-
-.caption-div button a{
     color: #fff;
-    text-decoration: none;
-}
-
-.section{
-    padding: 50px 0;
+    text-align: center;
+  }
+  .section {
+    padding-top: 0;
+    padding-bottom: 20px;
     position: relative;
-    z-index: 2000;
-}
-
-.section .hcard{
+    margin-top: -40px !important;
+  }
+  .section .hcard {
     width: 320px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 30px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
     border-radius: 17.6667px;
     padding: 20px 5px;
-}
-
-.section .hcard img{
-    margin-top: 36px;
-    margin-left: 12px;
-}
-
-
-.section h3{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 27px;
-    color: #000000;
-}
-.section p{
-    font-size: 13.5319px;
-}
-
-.section1{
-    position: relative;
-    padding-top: 0;
-    padding-bottom: 30px;
-}
-
-.section1 .text-content{
-    padding-bottom: 30px;
-}
-
-.section1 h1{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 28px;
-    line-height: 40px;
-    color: #000000;
-}
-
-.section1 p{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
-    text-align: justify;
-}
-
-.section1 ul{
-    padding: 0;
-}
-
-.section1 ul li{
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(4, 4, 4, 0.8);
-}
-
-.section1 ul li i{
-    margin-right: 10px;
-    color: #1E5BF9;
-}
-
-.section1 .text-content button a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.section1 .section1-image{
-    position: relative;
-}
-
-.section1 .curve-image{
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
-
-.section1 .section1-image .img-image img{
+  }
+  .section1 .section1-image .img-image img {
     position: absolute;
     box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
     border-radius: 17.6667px;
     width: 120px;
     height: 60px;
-    bottom: 30px;
+    bottom: 50px;
     z-index: 2;
-}
-
-.section2{
-    padding-top: 30px;
-}
-
-.section2 h1{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 40px;
-    color: #000000;
-    text-align: center;
-}
-
-.skillcard{
-    text-align: center;
-    width: 300px;
-    margin: 0 auto;
-}
-
-.skillcard .col-12{
-    margin-bottom: 50px;
-    padding: 30px 10px;
-}
-
-.skillcard img{
-    width: 80px;
-    height: 67px;
-}
-
-.skillcard h3{
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
-    color: #000000;
-    padding-top: 20px;
-}
-
-.skillcard .card-hover{
-    box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
-    border-radius: 10px;
-}
-
-@media only screen and (min-width: 768px) {
-    .hero .carousel {
-        margin-top: -100px;
-    }    
-    .hero .carousel-inner .carousel-item img{
-        height: 50vh;
-    }
-    .section1{
-        padding-top: 60px;
-    }
-    .caption-div .text{
-        padding-top: 110px;
-        width: 60%;
-        margin: 0 auto;
-    }
-        
-    .caption-div h1{
-        font-family: 'Ubuntu', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 40px;
-        color: #FFFFFF;
-        text-align: center;
-    }
-    
-    .caption-div p{
-        padding: 10px 0;
-        color:#fff;
-        text-align: center;
-    }
-    .section{
-        padding-top: 0;
-        padding-bottom: 20px;
-        position: relative;
-        margin-top: -40px!important;
-    }
-    .section .hcard{
-        width: 320px;
-        height: auto;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        background: #FFFFFF;
-        box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
-        border-radius: 17.6667px;
-        padding: 20px 5px;
-    }
-    .section1 .section1-image .img-image img{
-        position: absolute;
-        box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
-        border-radius: 17.6667px;
-        width: 120px;
-        height: 60px;
-        bottom: 50px;
-        z-index: 2;
-    }
-    .section2{
-        padding-top: 40px;
-    }
-    .skillcard{
-        width: 700px;
-        width: auto;
-    }
-    .skillcard .col-12{
-        padding: 30px 30px;
-    }
+  }
+  .section2 {
+    padding-top: 40px;
+  }
+  .skillcard {
+    width: 700px;
+    width: auto;
+  }
+  .skillcard .col-12 {
+    padding: 30px 30px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    .hero .carousel-inner .carousel-item img{
-        height: 70vh;
-    }
-    .section1{
-        padding-top: 80px;
-    }
-    .hsc-container{
-        width: 85%;
-        margin: 0 auto;
-    }
-    .section1 .text-content{
-        padding-top: 30px;
-    }
-    .section1 .img-image img{
-        position: absolute;
-        box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
-        border-radius: 17.6667px;
-        width: 180px!important;
-        height: 86px!important;
-        bottom: 80px!important;
-        z-index: 1;
-    }
-    .section1 .curve-image{
-        height: 85%;
-    }
-    .section2{
-        padding-top: 50px;
-    }
-    .section2 h1{
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 40px;
-        line-height: 67px;
-        color: #000000;
-        text-align: center;
-    }
-    .skillcard{
-        margin-top: 60px;
-        width: 900px;
-        padding-bottom: 60px;
-    }
+  .hero .carousel-inner .carousel-item img {
+    height: 70vh;
+  }
+  .section1 {
+    padding-top: 80px;
+  }
+  .hsc-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .section1 .text-content {
+    padding-top: 30px;
+  }
+  .section1 .img-image img {
+    position: absolute;
+    box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
+    border-radius: 17.6667px;
+    width: 180px !important;
+    height: 86px !important;
+    bottom: 80px !important;
+    z-index: 1;
+  }
+  .section1 .curve-image {
+    height: 85%;
+  }
+  .section2 {
+    padding-top: 50px;
+  }
+  .section2 h1 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 67px;
+    color: #000000;
+    text-align: center;
+  }
+  .skillcard {
+    margin-top: 60px;
+    width: 900px;
+    padding-bottom: 60px;
+  }
 }
 
 @media only screen and (min-width: 1366px) {
-    .hero .carousel-inner .carousel-item img{
-        height: 80vh;
-    }
-    .section1{
-        padding-top: 80px;
-    }    
-    .caption-div h1{
-        font-family: 'Ubuntu', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-        line-height: 65px;
-        color: #FFFFFF;
-        text-align: center;
-    }
-    
-    .caption-div p{
-        padding: 10px 0;
-        color:#fff;
-        text-align: center;
-    }
-    .section1 h1{
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 50px;
-        line-height: 67px;
-        color: #000000;
-    }
-    .section1 .text-content{
-        padding-top: 70px;
-    }
-    .section1 .img-image img{
-        position: absolute;
-        box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
-        border-radius: 17.6667px;
-        width: 236px!important;
-        height: 116px!important;
-        bottom: 170px!important;
-        left: 0;
-        z-index: 1;
-    }
-    .section2{
-        padding-top: 50px;
-    }
-    .section1 .curve-image{
-        height: 80%;
-    }
-    .skillcard{
-        margin-top: 60px;
-        width: 85%;
-        padding-bottom: 60px;
-    }
+  .hero .carousel-inner .carousel-item img {
+    height: 80vh;
+  }
+  .section1 {
+    padding-top: 80px;
+  }
+  .caption-div h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 65px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .caption-div p {
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+  }
+  .section1 h1 {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 67px;
+    color: #000000;
+  }
+  .section1 .text-content {
+    padding-top: 70px;
+  }
+  .section1 .img-image img {
+    position: absolute;
+    box-shadow: 0px 10px 25px rgba(23, 29, 36, 0.1);
+    border-radius: 17.6667px;
+    width: 236px !important;
+    height: 116px !important;
+    /* bottom: 170px!important; */
+    left: 0;
+    z-index: 1;
+  }
+  .section2 {
+    padding-top: 50px;
+  }
+  .section1 .curve-image {
+    height: 80%;
+  }
+  .skillcard {
+    margin-top: 60px;
+    width: 85%;
+    padding-bottom: 60px;
+  }
 }

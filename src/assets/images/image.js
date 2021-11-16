@@ -12,7 +12,7 @@ const images = {
     hero1: require("./hero1.png").default,
     hero2: require("./hero2.jpg").default,
     hero3: require("./hero3.jpg").default,
-    image1: require("./circleimage.png").default,
+    image1: require("./fund-min.jpg").default,
     image2: require("./image2.png").default,
     group1: require("./Group1.png").default,
     group2: require("./Group2.png").default,

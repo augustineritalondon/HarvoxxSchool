@@ -130,14 +130,14 @@ const home = () => {
             </ul>
             <Button buttonStyle='btn--blue' buttonSize='btn--medium'><Link to="/payment"> Apply Now </Link></Button>
           </div>
-          <div className="col-lg-6 col-md-6 col-12 section1-image" data-aos="fade-left"
+          <div className="d-flex col-lg-6 col-md-6 col-12 section1-image" data-aos="fade-left"
             data-aos-easing="linear"
             data-aos-duration="1500">
-            <span className="img-image"><img src={images.image2} /></span>
+            <span className="img-image"><img src={images.image2} alt="" /></span>
             <img className="curve-image" data-aos="fade-left"
               data-aos-easing="linear"
               data-aos-duration="1500"
-              src={images.image1} alt="" />
+              src={images.image1} alt="" style={{width:"100%", height:"auto", objectFit:"cover"}} />
           </div>
         </div>
       </section>
