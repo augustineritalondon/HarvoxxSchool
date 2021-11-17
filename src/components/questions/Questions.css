@@ -10,7 +10,7 @@ img{
 .question{
     padding-top: 60px;
     padding-bottom: 50px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .question h1{

@@ -31,7 +31,7 @@ const Questions = () => {
             id:4,
             show:false,
             question: 'How many digital skills are available for DSP-300?',
-            answer: 'Currently, you can choose from about seven (7) digital skills. They are: •	Product design (UI/UX) •	Website development (Frontend) •	Website development (Backend) •	Digital marketing •	Cyber security (Powered by Hackify.io) •	Mobile app development (Flutter) •	Graphic design/ product branding. You can select any of these packages during the application.'
+            answer: 'Currently, you can choose from about seven (7) digital skills. They are: \n•	Product design (UI/UX) \n•	Website development (Frontend) \n•	Website development (Backend) \n•	Digital marketing \n•	Cyber security (Powered by Hackify.io) \n•	Mobile app development (Flutter) \n•	Graphic design/ product branding. \nYou can select any of these packages during the application.'
         },
         {
             id:5,
@@ -43,7 +43,7 @@ const Questions = () => {
             id:6,
             show:false,
             question: 'How does DSP-300 work?',
-            answer: '•	Selected persons will be under training for three (3) months (depending on the category). •	Trainees are drawn from different categories to form a team of 5 or 7. •	Each team will be assigned a project for three (3) months after training. •	Each team will be under the supervision of an experienced mentor. •	Successful teams and their projects are subscribed to techlauncher.io to help raise funds and commercialize their products. •	Trainees will get a recommendation for immediate employment.'
+            answer: '•	Selected persons will be under training for three (3) months (depending on the category). \n•	Trainees are drawn from different categories to form a team of 5 or 7. \n•	Each team will be assigned a project for three (3) months after training. \n•	Each team will be under the supervision of an experienced mentor. \n•	Successful teams and their projects are subscribed to techlauncher.io to help raise funds and commercialize their products. \n•	Trainees will get a recommendation for immediate employment.'
         },
         {
             id:7,
@@ -61,7 +61,7 @@ const Questions = () => {
             id:9,
             show:false,
             question: 'What more can I gain during the training?',
-            answer: 'We have painstakingly put measures in place that will help gain more than just acquiring the digital skills, for example: •	Personal branding •	Business of Tech •	How to raise funds •	How to get high-paying clients •	How to build a high-performance team. You will also have the opportunity to find a co-founder.'
+            answer: 'We have painstakingly put measures in place that will help gain more than just acquiring the digital skills, for example: \n•	Personal branding \n•	Business of Tech \n•	How to raise funds \n•	How to get high-paying clients \n•	How to build a high-performance team. \nYou will also have the opportunity to find a co-founder.'
         },
     ]
 
@@ -117,7 +117,12 @@ const Questions = () => {
                                 {
     
                                     questionItem.show ?
-                                    <p>{questionItem.answer}</p>
+                                    // <p>{questionItem.answer}</p>
+                                    <p>
+                                    {questionItem.answer.split('\n').map((item, key) =>{
+                                        return <span key={key}>{item}<br /></span>
+                                    })}
+                                    </p>
                                     : null
                                 }
                             </div>
