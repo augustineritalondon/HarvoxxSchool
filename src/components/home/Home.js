@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import images from "../../assets/images/image";
 import { Carousel } from 'react-bootstrap'
 import { Button } from "../button/Button";
-import { Questions, Testimonial } from '../index'
+import { Questions, Testimonial, Steps } from '../index'
 import { Navbar } from "../index";
 import './Home.css'
 import { Link } from "react-router-dom";
@@ -215,6 +215,8 @@ const home = () => {
           </div>
         </div>
       </section>
+
+      <Steps />
 
       <Testimonial />
 

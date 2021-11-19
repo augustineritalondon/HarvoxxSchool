@@ -1,5 +1,5 @@
 import react, {useEffect} from 'react'
-import { Navbar, Home, Footer, Services, Product, Payment } from './components';
+import { Navbar, Home, Footer, Payment } from './components';
 import { Switch, Route } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
