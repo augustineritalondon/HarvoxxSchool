@@ -1,14 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import images from "../../assets/images/image";
 import { Carousel } from 'react-bootstrap'
 import { Button } from "../button/Button";
-import { Questions, Testimonial, Steps } from '../index'
+import { Questions, Testimonial, Steps, Modal } from '../index'
 import { Navbar } from "../index";
 import './Home.css'
 import { Link } from "react-router-dom";
+import Loader from 'react-js-loader'
 
+const Home = () => {
+  const [loading, setLoading] = useState(false)
 
-const home = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(prev => !prev)
+    console.log(showModal)
+  }
+
+  useEffect(() => {
+    setLoading(true)
+
+    setTimeout(() => {
+      setLoading(false)
+    }, 8000);
+
+  }, [])
 
   return (
     <>
@@ -27,9 +44,10 @@ const home = () => {
                 <p data-aos="fade-down"
                   data-aos-easing="linear"
                   data-aos-duration="1500"> Register to acquire in-demand tech skills for FREE</p>
-                <div>
-                  <Button buttonStyle='btn--red' className="herobutton"> <Link to="/payment"> Apply Now </Link></Button>
+                <div className="button-hero">
+                  <Button buttonStyle='btn--red' className="herobutton" onClick={openModal} >Check Status</Button> 
                 </div>
+
               </div>
             </div>
           </Carousel.Item>
@@ -47,8 +65,8 @@ const home = () => {
                 <p data-aos="fade-down"
                   data-aos-easing="linear"
                   data-aos-duration="1500">If you are willing, and can be dedicated, then you can learn a tech skill now.</p>
-                <div>
-                  <Button buttonStyle='btn--red'> <Link to="/payment"> Apply Now </Link></Button>
+                <div className="button-hero">
+                  <Button buttonStyle='btn--red' className="herobutton" onClick={openModal} >Check Status</Button> 
                 </div>
               </div>
             </div>
@@ -67,15 +85,15 @@ const home = () => {
                 <p data-aos="fade-down"
                   data-aos-easing="linear"
                   data-aos-duration="1500">Join millions of other youths earning legitimately with their tech skills</p>
-                <div>
-                  <Button buttonStyle='btn--red'> <Link to="/payment"> Apply Now </Link></Button>
+                <div className="button-hero">
+                  <Button buttonStyle='btn--red' className="herobutton" onClick={openModal} >Check Status</Button> 
                 </div>
               </div>
             </div>
           </Carousel.Item>
         </Carousel>
       </section>
-
+      
       <section className="hs-container section">
         <div className="row hsc-container">
           <div className="col-lg-4 col-md-4 col-12 hcard">
@@ -128,7 +146,7 @@ const home = () => {
               <li><i class="fas fa-check-circle"></i>Graphics Design and Product Branding</li>
               <li><i class="fas fa-check-circle"></i>Mobile App Development (Flutter)</li>
             </ul>
-            <Button buttonStyle='btn--blue' buttonSize='btn--medium'><Link to="/payment"> Apply Now </Link></Button>
+            <Button buttonStyle='btn--blue' buttonSize='btn--medium' disabled><Link to="/"> Apply Now </Link></Button>
           </div>
           <div className="d-flex col-lg-6 col-md-6 col-12 section1-image" data-aos="fade-left"
             data-aos-easing="linear"
@@ -137,7 +155,7 @@ const home = () => {
             <img className="curve-image" data-aos="fade-left"
               data-aos-easing="linear"
               data-aos-duration="1500"
-              src={images.image1} alt="" style={{width:"100%", height:"auto", objectFit:"cover"}} />
+              src={images.image1} alt="" style={{ width: "100%", height: "auto", objectFit: "cover" }} />
           </div>
         </div>
       </section>
@@ -153,10 +171,10 @@ const home = () => {
             <img src={images.shopping} />
             <h3>Product(UI/UX) Design</h3>
             <p>
-              Product designers are able to design, prototype, test, and improve products. 
+              Product designers are able to design, prototype, test, and improve products.
               They work to optimize the user experience in the solutions they make for their users.
             </p>
-            <Link to="/payment"> Apply Now </Link>
+            <Link to="/"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12 card-hover" data-aos="fade-down"
             data-aos-easing="linear"
@@ -164,33 +182,33 @@ const home = () => {
             <img src={images.shopping} />
             <h3>Website Development (Frontend)</h3>
             <p>
-            Frontend is the part of the website that the user interacts with directly. It is also known as the ‘Christ Side’ 
-            of the platform. It includes everything that users experience directly on the website. 
-            Text colors &amp; styles, images, graphs &amp; tables, buttons, colors &amp; navigation menu.
+              Frontend is the part of the website that the user interacts with directly. It is also known as the ‘Christ Side’
+              of the platform. It includes everything that users experience directly on the website.
+              Text colors &amp; styles, images, graphs &amp; tables, buttons, colors &amp; navigation menu.
             </p>
-            <Link to="/payment"> Apply Now </Link>
+            <Link to="/"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
             <img src={images.shopping} />
             <h3>Website Development (Backend)</h3>
-            <p>This is the server-side of the website. It shows and arranges data. It also makes sure everything 
-              on the client-side of the website works fine. This is actually the part of the website that you 
-              can't see or interact with. Building APIs, creating libraries, etc. are all included in the backend 
+            <p>This is the server-side of the website. It shows and arranges data. It also makes sure everything
+              on the client-side of the website works fine. This is actually the part of the website that you
+              can't see or interact with. Building APIs, creating libraries, etc. are all included in the backend
               development.
             </p>
-            <Link to="/payment"> Apply Now </Link>
+            <Link to="/"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
             <img src={images.shopping} />
             <h3>CyberSecurity (Powered by hackify.io)</h3>
             <p>
-              Cybersecurity deals with the protection of internet-connected systems (hardware, software, data, 
-              etc) from cyber attacks. CyberSecurity experts defends computers, servers, mobile devices, 
+              Cybersecurity deals with the protection of internet-connected systems (hardware, software, data,
+              etc) from cyber attacks. CyberSecurity experts defends computers, servers, mobile devices,
               electronic systems, networks and data from malicious attacks.
             </p>
-            <Link to="/payment"> Apply Now </Link>
+            <Link to="/"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12 card-hover" data-aos="fade-down"
             data-aos-easing="linear"
@@ -198,20 +216,20 @@ const home = () => {
             <img src={images.shopping} />
             <h3>Digital Marketing</h3>
             <p>
-              This is simply advertising made through digital channels such as search engines, 
+              This is simply advertising made through digital channels such as search engines,
               social media, email, mobile apps. It involves the use of the internet to reach consumers.
             </p>
-            <Link to="/payment"> Apply Now </Link>
+            <Link to="/"> Apply Now </Link>
           </div>
           <div className="col-lg-4 col-md-4 col-12" data-aos="fade-up"
             data-aos-duration="3000">
             <img src={images.shopping} />
             <h3>Graphics Design/Product Branding</h3>
             <p>
-              Graphic design is a craft where you create visual content to communicate messages. 
+              Graphic design is a craft where you create visual content to communicate messages.
               Graphic designers use typography, ideas and pictures to meet users' specific needs.
             </p>
-            <Link to="/payment"> Apply Now </Link>
+            <Link to="/"> Apply Now </Link>
           </div>
         </div>
       </section>
@@ -221,8 +239,10 @@ const home = () => {
       <Testimonial />
 
       <Questions />
+
+      <Modal showModal={showModal} setShowModal={setShowModal} />
     </>
   );
 };
 
-export default home;
+export default Home;

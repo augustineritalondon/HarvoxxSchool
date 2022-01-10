@@ -7,3 +7,4 @@ export {default as Testimonial} from './testimonial/Testimonial';
 export {default as Product} from './product/Product';
 export {default as Payment} from './Payment/Payment';
 export {default as Steps} from './steps/Steps';
+export {default as Modal} from './Modal/Modal';

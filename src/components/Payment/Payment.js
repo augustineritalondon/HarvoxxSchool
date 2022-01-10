@@ -12,18 +12,23 @@ import { Link, useHistory } from "react-router-dom";
 
 function Payment() {
   const [formStep, setFormStep] = useState(0);
+  
   const {
     watch,
     register,
     handleSubmit,
     formState: { errors, isValid },
   } = useForm({ mode: "all" });
+
+
   const nextStep = () => {
     setFormStep((cur) => cur + 1);
   };
+  
   const prevStep = () => {
     setFormStep((cur) => cur - 1);
   };
+  
   const renderButton = () => {
     if (formStep > 1) {
       return undefined;
@@ -266,17 +271,17 @@ function Payment() {
                       <option value="Backend">
                         Website Development (Backend)
                       </option>
-                      <option value="sybersecurity">
+                      <option value="Cybersecurity">
                         Cyber Security (Powered by hackify.io)
                       </option>
-                      <option value="productdesign">Product Design</option>
+                      <option value="Productdesign">Product Design</option>
                       <option value="digitalmarketing">
                         Digital Marketing
                       </option>
-                      <option value="graphicsdesign">
+                      <option value="Graphicsdesign">
                         Graphics Design/Product Branding
                       </option>
-                      <option value="graphicsdesign">
+                      <option value="MobileAppDev">
                         Mobile App Development (Flutter)
                       </option>
                     </Form.Select>

@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="span nav-sec">
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
               <span className="nav-item">
-                <Link to="/payment" className="nav-links">
+                <Link to="/" className="nav-links">
                   Register
                 </Link>
               </span>
@@ -73,7 +73,7 @@ const Navbar = () => {
               <Link to="/"> Courses</Link>
             </li>
             <li onClick={handleClick}>
-              <Link to="/payment"> Register</Link>
+              <Link to="/"> Register</Link>
             </li>
             {/* <li onClick={handleClick}><Button buttonStyle='btn--red'>Sponsor</Button></li> */}
           </ul>

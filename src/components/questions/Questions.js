@@ -68,7 +68,7 @@ const Questions = () => {
 
     const [show, setShow] = useState(false)
     const [question, setQuestion] = useState(questions)
-    console.log(question)
+    // console.log(question)
 
     const [answer, setAnswer] = useState("");
 
@@ -113,7 +113,7 @@ const Questions = () => {
                                 <button className={questionItem.show ? 'active': null} onClick={()=>handleShow(index)}>{questionItem.question}
                                 <i className={show ? "fas fa-minus" : "fas fa-plus"} />
                                 </button>
-                                { console.log(questionItem.show)}
+                                {/* { console.log(questionItem.show)} */}
                                 {
     
                                     questionItem.show ?

@@ -59,12 +59,13 @@ img {
   text-align: center;
 }
 
-.caption-div div div {
+.caption-div div .button-hero {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  z-index: 99;
+  z-index: 1000;
+  color: #fff;
 }
 
 .caption-div div {
@@ -72,8 +73,8 @@ img {
 }
 
 .caption-div button {
-  position: absolute;
-  z-index: 2000;
+  /* position: absolute; */
+  /* z-index: 2000; */
 }
 
 .caption-div button a {
